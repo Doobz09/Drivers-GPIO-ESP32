@@ -1,3 +1,14 @@
+ /*FileName:         main.c                                                                                             */
+ /* Dependencies:    None                                                                                               */
+ /* Processor:       ESP32                                                                                              */
+ /* Board:           ESP32-PANTHER48                                                                                    */
+ /* Program version: 5.1                                                                                                */
+ /* Company:         Espressif Systems                                                                                  */
+ /* Description:     Aplicacion sencilla de un blink con variacion en el parpadeo.                                      */
+ /* Authors:         Guadalupe Méndez Ontiveros, Manuel Francisco Zubiate Loya, Alan Alexis Rodriguez Hernandez.        */                                        
+ /*Updated:          12/2023                                                                                            */
+
+
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
