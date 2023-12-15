@@ -41,10 +41,10 @@ La versión actual de los controladores es la 5.1.
     idf_component_register(SRCS "main.c" "../drivers/GPIO.c"
                     INCLUDE_DIRS ".")
 
-4. **Incluye el archivo de cabezera en tu proyecto para empezar a usar los drivers**
+4. **Incluye el archivo de cabezera en tu proyecto para empezar a usar los drivers:**
     #include "../drivers/GPIO.h"
 
-5. **Compila y disfruta los drivers**
+5. **Compila y disfruta los drivers:**
     Si no te quedo claro las intrucciones en el apartado de enlaces utiles, encontraras un enlace a YouTube donde
     se mostrara un tutorial de como instalar los drivers en un proyecto nuevo. 
 
