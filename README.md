@@ -35,7 +35,7 @@ La versión actual de los controladores es la 5.1.
         - `GPIO.h`
         - `BSP.h`
 
-[!IMPORTANT]
+.[!IMPORTANT]
 3. **Aegurate de que el compilador Cmake enlace los drivres:**
     Es importante agrear la ruta  "../drivers/GPIO.c" en el archivo CMakeLists.txt para no  tener problemas.
 
