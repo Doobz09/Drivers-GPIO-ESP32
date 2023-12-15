@@ -58,6 +58,7 @@ sencilla.
 **Ejemplos**
 
 **BLINK**
+```c
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -74,8 +75,8 @@ void app_main(void)
         GpioDigitalWrite(GPIO2,GPIO_LOW);
         vTaskDelay(pdMS_TO_TICKS(100)); 
     }
-}
-
+} 
+```
 # Documentación-detallada 
 
 - `GpioModeOutput(uint32_t gpio)`
