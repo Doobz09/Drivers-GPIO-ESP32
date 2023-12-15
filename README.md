@@ -35,6 +35,7 @@ La versión actual de los controladores es la 5.1.
         - `GPIO.h`
         - `BSP.h`
 
+[!IMPORTANT]
 3. **Aegurate de que el compilador Cmake enlace los drivres:**
     Es importante agrear la ruta  "../drivers/GPIO.c" en el archivo CMakeLists.txt para no  tener problemas.
 
@@ -53,6 +54,27 @@ La versión actual de los controladores es la 5.1.
 # Uso-básico
 En el main pricipal de este repositorio se encuentra un ejemplo de como es que se estan implementando los drivers para una aplicacion 
 sencilla.
+
+**Ejemplos**
+
+**BLINK**
+#include <stdio.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "../drivers/GPIO.h"
+
+void app_main(void)
+{
+    GpioModeOutput(GPIO2);
+    GpioDigitalWrite(GPIO2,GPIO_LOW);
+
+    while(1){
+        GpioDigitalWrite(GPIO2,GPIO_HIGH);
+        vTaskDelay(pdMS_TO_TICKS(100));
+        GpioDigitalWrite(GPIO2,GPIO_LOW);
+        vTaskDelay(pdMS_TO_TICKS(100)); 
+    }
+}
 
 # Documentación-detallada 
 
