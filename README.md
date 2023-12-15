@@ -39,7 +39,7 @@ La versión actual de los controladores es la 5.1.
 
 
 3.**Aegurate de que el compilador Cmake enlace los drivres:**
-    Es importante agrear la ruta ```markdown  "../drivers/GPIO.c"  ```en el archivo CMakeLists.txt para no  tener problemas.
+    Es importante agrear la ruta "../drivers/GPIO.c" en el archivo CMakeLists.txt para no  tener problemas.
 
     idf_component_register(SRCS "main.c" "../drivers/GPIO.c"
                     INCLUDE_DIRS ".")
