@@ -1027,3 +1027,13 @@
 11328	11798	7243158061569677	C:/Users/mende/Documents/ESP32_IDF/Drivers/Agregando-Drivers-Descargados/sample_project/build/.bin_timestamp	81e2272bdd7a8acf
 11799	11987	0	esp-idf/esptool_py/CMakeFiles/app_check_size	6055cb5022a27ccc
 11799	11987	0	C:/Users/mende/Documents/ESP32_IDF/Drivers/Agregando-Drivers-Descargados/sample_project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	6055cb5022a27ccc
+113	310	0	esp-idf/esptool_py/CMakeFiles/app_check_size	6055cb5022a27ccc
+113	310	0	C:/Users/mende/Documents/ESP32_IDF/Drivers/Agregando-Drivers-Descargados/sample_project/build/esp-idf/esptool_py/CMakeFiles/app_check_size	6055cb5022a27ccc
+101	400	7243119397334108	bootloader-prefix/src/bootloader-stamp/bootloader-build	6d4ff2610806500e
+101	400	7243119397334108	bootloader/bootloader.elf	6d4ff2610806500e
+101	400	7243119397334108	bootloader/bootloader.bin	6d4ff2610806500e
+101	400	7243119397334108	bootloader/bootloader.map	6d4ff2610806500e
+101	400	7243119397334108	C:/Users/mende/Documents/ESP32_IDF/Drivers/Agregando-Drivers-Descargados/sample_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	6d4ff2610806500e
+101	400	7243119397334108	C:/Users/mende/Documents/ESP32_IDF/Drivers/Agregando-Drivers-Descargados/sample_project/build/bootloader/bootloader.elf	6d4ff2610806500e
+101	400	7243119397334108	C:/Users/mende/Documents/ESP32_IDF/Drivers/Agregando-Drivers-Descargados/sample_project/build/bootloader/bootloader.bin	6d4ff2610806500e
+101	400	7243119397334108	C:/Users/mende/Documents/ESP32_IDF/Drivers/Agregando-Drivers-Descargados/sample_project/build/bootloader/bootloader.map	6d4ff2610806500e
