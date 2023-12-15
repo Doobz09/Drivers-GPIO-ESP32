@@ -25,7 +25,7 @@ La versión actual de los controladores es la 5.1.
 # Instalación
 
 1. **Clona este Repositorio:**
-    clona el repostorio dentro de una carpeta en donde quieras guardarlo 
+    clona el repostorio dentro de una carpeta en donde quieras guardarlo.
     git clone https://github.com/Doobz09/Drivers-GPIO-ESP32.git
 
 2. **Copia la carpeta Drivers en el proyecto en el que quieras trabajar:**
@@ -36,7 +36,8 @@ La versión actual de los controladores es la 5.1.
         - `BSP.h`
 
 3. **Aegurate de que el compilador Cmake enlace los drivres:**
-    Esimportante agrear la ruta  "../drivers/GPIO.c" para no  tener problemas 
+    Es importante agrear la ruta  "../drivers/GPIO.c" para no  tener problemas.
+
     idf_component_register(SRCS "main.c" "../drivers/GPIO.c"
                     INCLUDE_DIRS ".")
 
