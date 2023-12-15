@@ -45,9 +45,11 @@ La versión actual de los controladores es la 5.1.
                     INCLUDE_DIRS ".")
 
 4. **Incluye el archivo de cabezera en tu proyecto para empezar a usar los drivers:**
-```c
-    #include "../drivers/GPIO.h"
-    ```
+
+ ```c 
+ #include "../drivers/GPIO.h" 
+ ```
+    
 
 5. **Compila y disfruta los drivers:**
     Si no te quedo claro las intrucciones en el apartado de enlaces utiles, encontraras un enlace a YouTube donde
