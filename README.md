@@ -114,6 +114,28 @@ void app_main(void)
 
 }
 ```
+**Lectura de entrada en configuracion de resistencia Pull down**
+```c
+#include <stdio.h>
+#include "../drivers/GPIO.h"
+void app_main(void)
+{
+ GpioModeInput(GPIO4); /*pin que usaremos cono entrada*/
+ GpioModeOutput(GPIO2); /*Led integrado en la tarjeta DevKit*/
+ GpioPullDownEnable(GPIO4);
+
+ while(1){
+ 	 if( GpioDigitalRead(GPIO4)==1){  /*Leemos la entrada*/
+ 		 GpioDigitalWrite(GPIO2,GPIO_HIGH);/*Enciende Led*/
+ 	 }
+ 	 else{
+ 		 GpioDigitalWrite(GPIO2,GPIO_LOW); /*Apaga Led*/
+ 	 }
+
+ 	}
+}
+```
+
 # Documentación-detallada 
 
 - `GpioModeOutput(uint32_t gpio)`
