@@ -83,6 +83,37 @@ void app_main(void)
     }
 } 
 ```
+
+**TOGGLE**
+```c
+#include <stdio.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "../drivers/GPIO.h"
+
+void app_main(void)
+{
+    uint8_t estado_led=0;
+
+    GpioModeInput(GPIO18);        /*ESTABLECEMOS EL GPIO18 COMO ENTRADA*/
+    GpioPullUpEnable(GPIO18);     /*HABILITAMOS LA RESISTENCIA PULLUP INTERNA DEL GPIO18*/
+
+    GpioModeOutput(GPIO2);       /*ESTABLECEMOS EL GPIO2 COMO SALIDA*/
+
+    while(1){
+        GpioDigitalWrite(GPIO2,estado_led);     /*ESTABLECEMOS EL ESTADO LOGICO DEL GPIO2 SEGUN EL VALOR DE LA VARIABLE ESTADO_LED*/
+
+        if(GpioDigitalRead(GPIO18)==GPIO_LOW){   /*LEEMOS EL VALOR DEL GPIO18 Y SI ESTE ES PRESIONADO Y SOLATADO CAMBIA EL VALOR DE ESTADO_LED*/
+            while(GpioDigitalRead(GPIO18)==GPIO_LOW);
+            estado_led= !estado_led;                      
+        }
+            
+        vTaskDelay(pdMS_TO_TICKS(50));
+
+    }
+
+}
+```
 # Documentación-detallada 
 
 - `GpioModeOutput(uint32_t gpio)`
