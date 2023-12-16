@@ -1,14 +1,14 @@
 # Controladores GPIO para ESP32
 
-## Descripción
+# Descripción
 
 Este repositorio contiene controladores para la gestión de pines de entrada/salida (GPIO) en la ESP32. Estos controladores han sido desarrollados por Guadalupe Méndez Ontiveros, Manuel Francisco Zubiate Loya y Alan Alexis Rodriguez Hernandez para facilitar la configuración y utilización de los pines GPIO en proyectos basados en ESP32.
 
-## Versión del Programa
+# Versión del Programa
 
 La versión actual de los controladores es la 5.1.
 
-## Tabla de Contenidos
+# Tabla de Contenidos
 
 1. [Estructura del Proyecto](#estructura-del-proyecto)
 2. [Instalación](#instalación)
