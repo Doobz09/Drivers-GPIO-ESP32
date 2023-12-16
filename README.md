@@ -218,19 +218,15 @@ int state = GpioDigitalRead(GPIO5);
 
 
 # Enlaces Útiles
-- Link Tutorial Instalacion Youtube.
- https://www.youtube.com/watch?v=39Y9ccPP4lo
 
-- explicacion funciones GpioModeOutput y GpioDigitalWrite.
- https://www.youtube.com/watch?v=fnq7XpH4JNg
+- Tutorial de Instalación en YouTube: [Ver Video](https://www.youtube.com/watch?v=39Y9ccPP4lo)
 
--GpioDigitalRead,GpioPullUpEnable y GpioModeInput.
- https://www.youtube.com/watch?v=yoAUmNgFuao&list=PL8iwJR9vABu3u63JPcMa7BSwXpqoU4lDE&index=3
+- Explicación de las funciones `GpioModeOutput` y `GpioDigitalWrite`: [Ver Video](https://www.youtube.com/watch?v=fnq7XpH4JNg)
 
- -Ejemplo extra usnado GpioPullDownEnable(uint32_t gpio).
- https://www.youtube.com/watch?v=Ki9ZyHPGTjI&list=PL8iwJR9vABu3u63JPcMa7BSwXpqoU4lDE&index=4
+- Demostración de `GpioDigitalRead`, `GpioPullUpEnable` y `GpioModeInput`: [Ver Video](https://www.youtube.com/watch?v=yoAUmNgFuao&list=PL8iwJR9vABu3u63JPcMa7BSwXpqoU4lDE&index=3)
 
- Manual Drivers.
- 
+- Ejemplo adicional utilizando `GpioPullDownEnable(uint32_t gpio)`: [Ver Video](https://www.youtube.com/watch?v=Ki9ZyHPGTjI&list=PL8iwJR9vABu3u63JPcMa7BSwXpqoU4lDE&index=4)
+
+
  
 
