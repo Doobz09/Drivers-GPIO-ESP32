@@ -72,13 +72,13 @@ sencilla.
 
 void app_main(void)
 {
-    GpioModeOutput(GPIO2);
-    GpioDigitalWrite(GPIO2,GPIO_LOW);
+    GpioModeOutput(GPIO2);              /*ESTABLECEMOS EL GPIO2 COMO SALIDA*/
+    GpioDigitalWrite(GPIO2,GPIO_LOW);   /*ESTABLECEMOS EL ESTADO LOGICO DEL GPIO2 COMO BAJO PARA APAGAR EL LED*/
 
     while(1){
-        GpioDigitalWrite(GPIO2,GPIO_HIGH);
-        vTaskDelay(pdMS_TO_TICKS(100));
-        GpioDigitalWrite(GPIO2,GPIO_LOW);
+        GpioDigitalWrite(GPIO2,GPIO_HIGH);    /*ENCENDEMOS EL LED MANDANDO UN ALTO AL GPIO2*/
+        vTaskDelay(pdMS_TO_TICKS(100));       /*RETARDO DE 100 MILISEGUNDOS*/
+        GpioDigitalWrite(GPIO2,GPIO_LOW);     /*APAGAMOS EL LED MANDANDO UN BAJO AL GPIO2*/
         vTaskDelay(pdMS_TO_TICKS(100)); 
     }
 } 
