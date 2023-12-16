@@ -173,30 +173,30 @@ GpioPullUpEnable(GPIO5);
 
 ## GpioPullDownEnable(uint32_t gpio)
 Activa la resistencia PullDown interna en el GPIO especificado.
-## Parámetros:
+### Parámetros:
 `gpio`: Número del pin GPIO en el que se activará la resistencia PullDown.
-## Ejemplo de uso:
+### Ejemplo de uso:
 GpioPullDownEnable(GPIO5);
 
 
 
 ## GpioDigitalWrite(uint32_t gpio  gpio_state state)
 Establece el estado lógico (alto o bajo) en el GPIO especificado.
-## Parámetros:
+### Parámetros:
 `gpio`: Número del pin GPIO en el que se establecerá el estado.
 `state`: Estado lógico que se desea establecer (GPIO_HIGH o GPIO_LOW).
-## Ejemplo de uso:
+### Ejemplo de uso:
 GpioDigitalWrite(GPIO5, GPIO_HIGH);
 
 
 
 ## GpioDigitalRead(uint32_t gpio)
 Lee el estado lógico actual del GPIO especificado.
-## Parámetros:
+### Parámetros:
 `gpio`: Número del pin GPIO del que se leerá el estado.
-## Retorno:
+### Retorno:
 `int`: Valor leído en el GPIO (1 para HIGH, 0 para LOW).
-## Ejemplo de uso:
+### Ejemplo de uso:
 int state = GpioDigitalRead(GPIO5);
 
 
