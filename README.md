@@ -141,7 +141,7 @@ void app_main(void)
 2. [GpioModeInput(uint32_t gpio)](#gpiomodeinputuint32_t-gpio)
 3. [GpioPullUpEnable(uint32_t gpio)](#gpiopullupenableuint32_t-gpio)
 4. [GpioPullDownEnable(uint32_t gpio)](#gpiopulldownenableuint32_t-gpio)
-5. [GpioDigitalWrite(uint32_t gpio, gpio_state state)](#gpiodigitalwriteuint32_t-gpio)
+5. [GpioDigitalWrite(uint32_t gpio, gpio_state state)](#gpiodigitalwriteuint32_t-gpio-gpio_state-state)
 6. [GpioDigitalRead(uint32_t gpio)](#gpiodigitalreaduint32_t-gpio)
 
 ## GpioModeOutput(uint32_t gpio)
@@ -180,7 +180,7 @@ GpioPullDownEnable(GPIO5);
 
 
 
-## GpioDigitalWrite(uint32_t gpio, gpio_state state)
+## GpioDigitalWrite(uint32_t gpio  gpio_state state)
 Establece el estado lógico (alto o bajo) en el GPIO especificado.
 ## Parámetros:
 `gpio`: Número del pin GPIO en el que se establecerá el estado.
