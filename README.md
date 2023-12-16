@@ -137,21 +137,21 @@ void app_main(void)
 ```
 
 # Documentación-detallada 
-1. [GpioModeOutput(uint32_t gpio)](#GpioModeOutput(uint32_t-gpio))
-2. [GpioModeInput(uint32_t gpio)](#GpioModeInput(uint32_t-gpio))
+1. [GpioModeOutput(uint32_t gpio)](#gpiomodeoutputuint32_t-gpio)
+2. [GpioModeInput(uint32_t gpio)](#gpiomodeinputuint32_t-gpio)
 3. [GpioPullUpEnable(uint32_t gpio)](#gpiopullupenable)
 4. [GpioPullDownEnable(uint32_t gpio)](#gpiopulldownenable)
 5. [GpioDigitalWrite(uint32_t gpio, gpio_state state)](#gpiodigitalwrite)
 6. [GpioDigitalRead(uint32_t gpio)](#gpiodigitalread)
 
-### GpioModeOutput(uint32_t gpio)
+## GpioModeOutput(uint32_t gpio)
 
 Configura el GPIO especificado para su uso como salida.
 
-Parámetros:
+### Parámetros:
 `gpio`: Número del pin GPIO que se configurará como salida.
 
- Ejemplo de uso:
+### Ejemplo de uso:
  GpioModeOutput(GPIO5);
 
 
@@ -232,6 +232,8 @@ int state = GpioDigitalRead(GPIO5);
 - Demostración de `GpioDigitalRead`, `GpioPullUpEnable` y `GpioModeInput`: [Ver Video](https://www.youtube.com/watch?v=yoAUmNgFuao&list=PL8iwJR9vABu3u63JPcMa7BSwXpqoU4lDE&index=3)
 
 - Ejemplo adicional utilizando `GpioPullDownEnable(uint32_t gpio)`: [Ver Video](https://www.youtube.com/watch?v=Ki9ZyHPGTjI&list=PL8iwJR9vABu3u63JPcMa7BSwXpqoU4lDE&index=4)
+
+- Manual Drivers: https://drive.google.com/file/d/19B6PE_2ZCeL8dLf0YTZboQC51czPOgto/view
 
 
  
