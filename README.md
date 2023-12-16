@@ -137,7 +137,7 @@ void app_main(void)
 ```
 
 # Documentación-detallada 
-1. [GpioModeOutput(uint32_t gpio)](#gpiomodeoutput)
+1. [GpioModeOutput(uint32_t gpio)](###gpiomodeoutput)
 2. [GpioModeInput(uint32_t gpio)](#gpiomodeinput)
 3. [GpioPullUpEnable(uint32_t gpio)](#gpiopullupenable)
 4. [GpioPullDownEnable(uint32_t gpio)](#gpiopulldownenable)
