@@ -139,87 +139,66 @@ void app_main(void)
 # Documentación-detallada 
 1. [GpioModeOutput(uint32_t gpio)](#gpiomodeoutputuint32_t-gpio)
 2. [GpioModeInput(uint32_t gpio)](#gpiomodeinputuint32_t-gpio)
-3. [GpioPullUpEnable(uint32_t gpio)](#gpiopullupenable)
-4. [GpioPullDownEnable(uint32_t gpio)](#gpiopulldownenable)
-5. [GpioDigitalWrite(uint32_t gpio, gpio_state state)](#gpiodigitalwrite)
-6. [GpioDigitalRead(uint32_t gpio)](#gpiodigitalread)
+3. [GpioPullUpEnable(uint32_t gpio)](#gpiopullupenableuint32_t-gpio)
+4. [GpioPullDownEnable(uint32_t gpio)](#gpiopulldownenableuint32_t-gpio)
+5. [GpioDigitalWrite(uint32_t gpio, gpio_state state)](#gpiodigitalwriteuint32_t-gpio)
+6. [GpioDigitalRead(uint32_t gpio)](#gpiodigitalreaduint32_t-gpio)
 
 ## GpioModeOutput(uint32_t gpio)
-
 Configura el GPIO especificado para su uso como salida.
-
 ### Parámetros:
 `gpio`: Número del pin GPIO que se configurará como salida.
-
 ### Ejemplo de uso:
  GpioModeOutput(GPIO5);
 
 
 
-### GpioModeInput(uint32_t gpio)
-
+## GpioModeInput(uint32_t gpio)
 Configura el GPIO especificado para su uso como entrada.
-
-Parámetros:
+### Parámetros:
 `gpio`: Número del pin GPIO que se configurará como entrada.
-
- Ejemplo de uso:
+### Ejemplo de uso:
 GpioModeInput(GPIO5);
 
 
 
-### GpioPullUpEnable(uint32_t gpio)
-
+## GpioPullUpEnable(uint32_t gpio)
 Activa la resistencia PullUp interna en el GPIO especificado.
-
-Parámetros:
+### Parámetros:
 `gpio`: Número del pin GPIO en el que se activará la resistencia PullUp.
-
-Ejemplo de uso:
+###Ejemplo de uso:
 GpioPullUpEnable(GPIO5);
 
 
 
-### GpioPullDownEnable(uint32_t gpio)
-
+## GpioPullDownEnable(uint32_t gpio)
 Activa la resistencia PullDown interna en el GPIO especificado.
-
-Parámetros:
+## Parámetros:
 `gpio`: Número del pin GPIO en el que se activará la resistencia PullDown.
-
-Ejemplo de uso:
+## Ejemplo de uso:
 GpioPullDownEnable(GPIO5);
 
 
 
-### GpioDigitalWrite(uint32_t gpio, gpio_state state)
-
+## GpioDigitalWrite(uint32_t gpio, gpio_state state)
 Establece el estado lógico (alto o bajo) en el GPIO especificado.
-
-Parámetros:
+## Parámetros:
 `gpio`: Número del pin GPIO en el que se establecerá el estado.
 `state`: Estado lógico que se desea establecer (GPIO_HIGH o GPIO_LOW).
-
-Ejemplo de uso:
+## Ejemplo de uso:
 GpioDigitalWrite(GPIO5, GPIO_HIGH);
 
 
 
-### GpioDigitalRead(uint32_t gpio)
-
+## GpioDigitalRead(uint32_t gpio)
 Lee el estado lógico actual del GPIO especificado.
-
-Parámetros:
+## Parámetros:
 `gpio`: Número del pin GPIO del que se leerá el estado.
-
-Retorno:
+## Retorno:
 `int`: Valor leído en el GPIO (1 para HIGH, 0 para LOW).
-
-Ejemplo de uso:
+## Ejemplo de uso:
 int state = GpioDigitalRead(GPIO5);
 
-
-    
 
 
 
