@@ -137,8 +137,14 @@ void app_main(void)
 ```
 
 # Documentación-detallada 
+1. [GpioModeOutput(uint32_t gpio)](#gpiomodeoutput)
+2. [GpioModeInput(uint32_t gpio)](#gpiomodeinput)
+3. [GpioPullUpEnable(uint32_t gpio)](#gpiopullupenable)
+4. [GpioPullDownEnable(uint32_t gpio)](#gpiopulldownenable)
+5. [GpioDigitalWrite(uint32_t gpio, gpio_state state)](#gpiodigitalwrite)
+6. [GpioDigitalRead(uint32_t gpio)](#gpiodigitalread)
 
-- `GpioModeOutput(uint32_t gpio)`
+### GpioModeOutput(uint32_t gpio)
 
 Configura el GPIO especificado para su uso como salida.
 
@@ -150,7 +156,7 @@ Parámetros:
 
 
 
-- `GpioModeInput(uint32_t gpio)`
+### GpioModeInput(uint32_t gpio)
 
 Configura el GPIO especificado para su uso como entrada.
 
@@ -162,7 +168,7 @@ GpioModeInput(GPIO5);
 
 
 
-- `GpioPullUpEnable(uint32_t gpio)`
+### GpioPullUpEnable(uint32_t gpio)
 
 Activa la resistencia PullUp interna en el GPIO especificado.
 
@@ -174,7 +180,7 @@ GpioPullUpEnable(GPIO5);
 
 
 
-- `GpioPullDownEnable(uint32_t gpio)`
+### GpioPullDownEnable(uint32_t gpio)
 
 Activa la resistencia PullDown interna en el GPIO especificado.
 
@@ -186,7 +192,7 @@ GpioPullDownEnable(GPIO5);
 
 
 
-- `GpioDigitalWrite(uint32_t gpio, gpio_state state)`
+### GpioDigitalWrite(uint32_t gpio, gpio_state state)
 
 Establece el estado lógico (alto o bajo) en el GPIO especificado.
 
@@ -199,7 +205,7 @@ GpioDigitalWrite(GPIO5, GPIO_HIGH);
 
 
 
-- `GpioDigitalRead(uint32_t gpio)`
+### GpioDigitalRead(uint32_t gpio)
 
 Lee el estado lógico actual del GPIO especificado.
 
