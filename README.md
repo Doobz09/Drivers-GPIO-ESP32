@@ -166,7 +166,7 @@ GpioModeInput(GPIO5);
 Activa la resistencia PullUp interna en el GPIO especificado.
 ### Parámetros:
 `gpio`: Número del pin GPIO en el que se activará la resistencia PullUp.
-###Ejemplo de uso:
+### Ejemplo de uso:
 GpioPullUpEnable(GPIO5);
 
 
